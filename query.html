@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디있찌 LOST & FOUND - 1대1 문의</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="content">
+        <div id="query-page" class="page service-page">
+            <header class="form-header">
+                <img class="logo" src="./images/logo.png" alt="어디있찌 LOST & FOUND 로고">
+                <a class="back-button" href="./index.html">뒤로가기</a>
+            </header>
+            <div class="line"></div>
+            <div class="content-area">
+                <div class="form-container wide query-form-container">
+                    <h2>1대1 문의 작성 💬</h2>
+                    <form onsubmit="return false;" class="query-form">
+                        <div class="form-group">
+                            <label for="query_title">제목</label>
+                            <input type="text" id="query_title" name="query_title" placeholder="문의 제목을 입력해 주세요." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="query_email">답변 받을 이메일</label>
+                            <input type="email" id="query_email" name="query_email" placeholder="답변을 받을 이메일 주소를 입력해 주세요." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="query_content">문의 내용</label>
+                            <textarea id="query_content" name="query_content" rows="10" placeholder="상세한 문의 내용을 입력해 주세요." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">문의 제출하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
